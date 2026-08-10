@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Superstore Performance Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+  :root {
+    --bg: #0a0f1c;
+    --surface: #121a2b;
+    --surface-2: #0e1526;
+    --border: #1f2a42;
+    --text: #e8edf7;
+    --muted: #8a96b3;
+    --teal: #2dd4bf;
+    --amber: #f5a524;
+    --red: #fb6b6b;
+    --green: #34d399;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(45,212,191,0.08), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(245,165,36,0.06), transparent 40%);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    padding: 32px 40px 56px;
+  }
+
+  header {
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 8px;
+  }
+
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .pulse-line {
+    height: 2px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, var(--teal), var(--amber) 40%, var(--red) 70%, transparent);
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .kpi-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kpi-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--accent, var(--teal));
+  }
+
+  .kpi-label {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  .kpi-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .kpi-sub {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .grid.two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px 8px;
+  }
+
+  .card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .card-note {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .chart-wrap { position: relative; height: 260px; }
+  .chart-wrap.short { height: 220px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th {
+    text-align: left;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  td {
+    padding: 7px 8px;
+    border-bottom: 1px solid var(--surface-2);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+  }
+  td.name { font-family: 'Inter', sans-serif; }
+  td.num { text-align: right; color: var(--green); }
+
+  footer {
+    color: var(--muted);
+    font-size: 11.5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .grid, .grid.two-col { grid-template-columns: 1fr; }
+    body { padding: 24px 18px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Canada &middot; FY2009&ndash;2012 &middot; 8,399 order lines</div>
+  <h1>Superstore Performance Dashboard</h1>
+  <div class="subtitle">Sales, profitability, and fulfillment across regions, products, and customers</div>
+  <div class="pulse-line"></div>
+</header>
+
+<div class="kpi-row">
+  <div class="kpi-card" style="--accent: var(--teal)">
+    <div class="kpi-label">Total Sales</div>
+    <div class="kpi-value" id="kpi-sales">–</div>
+    <div class="kpi-sub">5,496 orders</div>
+  </div>
+  <div class="kpi-card" style="--accent: var(--amber)">
+    <div class="kpi-label">Total Profit</div>
+    <div class="kpi-value" id="kpi-profit">–</div>
+    <div class="kpi-sub">10.2% margin</div>
+  </div>
+  <div class="kpi-card" style="--accent: var(--green)">
+    <div class="kpi-label">Profit Margin</div>
+    <div class="kpi-value">10.2%</div>
+    <div class="kpi-sub">dollar-weighted, not row-averaged</div>
+  </div>
+  <div class="kpi-card" style="--accent: var(--red)">
+    <div class="kpi-label">Loss-Making Orders</div>
+    <div class="kpi-value">4,264</div>
+    <div class="kpi-sub">50.8% of all line items</div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <div class="card-title">Monthly Sales vs. Profit</div>
+    <div class="card-note">2009&ndash;2012 &middot; profit does not track sales 1:1</div>
+    <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Profit by Sub-Category</div>
+    <div class="card-note">Tables and Bookcases are structurally unprofitable</div>
+    <div class="chart-wrap"><canvas id="subcatChart"></canvas></div>
+  </div>
+</div>
+
+<div class="grid two-col">
+  <div class="card">
+    <div class="card-title">Avg Shipping Days by Order Priority</div>
+    <div class="card-note">"Low" priority ships ~3x slower than every other tier</div>
+    <div class="chart-wrap short"><canvas id="priorityChart"></canvas></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Below-Average Provinces by Profit</div>
+    <div class="card-note">Nunavut and Newfoundland lag the rest of the country</div>
+    <div class="chart-wrap short"><canvas id="regionChart"></canvas></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">Top 10 Customers by Profit</div>
+  <div class="card-note">Emily Phan alone contributes 2.2% of total company profit</div>
+  <table>
+    <thead><tr><th>Customer</th><th style="text-align:right">Total Profit</th></tr></thead>
+    <tbody id="customerTable"></tbody>
+  </table>
+</div>
+
+<footer>Data: cleaned &amp; modeled from the Superstore Sales dataset (SQL + Python) &middot; See README.md for full methodology</footer>
+
+<script>
+const data = {"subcategory_profit": [{"product_sub_category": "Tables", "total_profit": -99062.5}, {"product_sub_category": "Bookcases", "total_profit": -33582.13}, {"product_sub_category": "Scissors, Rulers and Trimmers", "total_profit": -7799.25}, {"product_sub_category": "Rubber Bands", "total_profit": -102.67}, {"product_sub_category": "Storage & Organization", "total_profit": 6664.15}, {"product_sub_category": "Pens & Art Supplies", "total_profit": 7564.78}, {"product_sub_category": "Labels", "total_profit": 13677.17}, {"product_sub_category": "Paper", "total_profit": 45263.2}, {"product_sub_category": "Envelopes", "total_profit": 48182.6}, {"product_sub_category": "Computer Peripherals", "total_profit": 94287.48}, {"product_sub_category": "Appliances", "total_profit": 97158.06}, {"product_sub_category": "Office Furnishings", "total_profit": 100427.93}, {"product_sub_category": "Chairs & Chairmats", "total_profit": 149649.73}, {"product_sub_category": "Copiers and Fax", "total_profit": 167361.49}, {"product_sub_category": "Binders and Binder Accessories", "total_profit": 307413.39}, {"product_sub_category": "Office Machines", "total_profit": 307712.93}, {"product_sub_category": "Telephones and Communication", "total_profit": 316951.62}], "monthly_trend": [{"month_name": "Jan", "year": 2009, "sales": 516302.96, "profit": 62326.4}, {"month_name": "Feb", "year": 2009, "sales": 332480.64, "profit": 30422.68}, {"month_name": "Mar", "year": 2009, "sales": 411628.73, "profit": 22802.96}, {"month_name": "Apr", "year": 2009, "sales": 393276.48, "profit": 39132.73}, {"month_name": "May", "year": 2009, "sales": 230145.54, "profit": 18035.35}, {"month_name": "Jun", "year": 2009, "sales": 263456.07, "profit": 34640.55}, {"month_name": "Jul", "year": 2009, "sales": 380503.97, "profit": 41749.43}, {"month_name": "Aug", "year": 2009, "sales": 329754.72, "profit": 14682.84}, {"month_name": "Sep", "year": 2009, "sales": 325292.31, "profit": 46652.05}, {"month_name": "Oct", "year": 2009, "sales": 361555.27, "profit": 55228.01}, {"month_name": "Nov", "year": 2009, "sales": 248933.43, "profit": 16222.22}, {"month_name": "Dec", "year": 2009, "sales": 415809.35, "profit": 52643.51}, {"month_name": "Jan", "year": 2010, "sales": 336526.68, "profit": 48177.27}, {"month_name": "Feb", "year": 2010, "sales": 271580.51, "profit": 25999.13}, {"month_name": "Mar", "year": 2010, "sales": 217808.01, "profit": 1116.68}, {"month_name": "Apr", "year": 2010, "sales": 266968.59, "profit": 17306.51}, {"month_name": "May", "year": 2010, "sales": 283534.28, "profit": 42636.66}, {"month_name": "Jun", "year": 2010, "sales": 293080.66, "profit": 36130.26}, {"month_name": "Jul", "year": 2010, "sales": 229885.5, "profit": 15918.45}, {"month_name": "Aug", "year": 2010, "sales": 207937.01, "profit": 21862.78}, {"month_name": "Sep", "year": 2010, "sales": 418343.28, "profit": 50022.73}, {"month_name": "Oct", "year": 2010, "sales": 365251.98, "profit": 48596.75}, {"month_name": "Nov", "year": 2010, "sales": 290670.35, "profit": 23345.07}, {"month_name": "Dec", "year": 2010, "sales": 368093.95, "profit": 32759.19}, {"month_name": "Jan", "year": 2011, "sales": 251467.23, "profit": 17704.56}, {"month_name": "Feb", "year": 2011, "sales": 299890.14, "profit": 20848.88}, {"month_name": "Mar", "year": 2011, "sales": 296035.87, "profit": 43243.56}, {"month_name": "Apr", "year": 2011, "sales": 288213.4, "profit": 36106.24}, {"month_name": "May", "year": 2011, "sales": 262628.5, "profit": 25585.24}, {"month_name": "Jun", "year": 2011, "sales": 197740.85, "profit": 17478.47}, {"month_name": "Jul", "year": 2011, "sales": 287905.19, "profit": 36903.84}, {"month_name": "Aug", "year": 2011, "sales": 274578.48, "profit": 24378.93}, {"month_name": "Sep", "year": 2011, "sales": 276049.8, "profit": 33098.01}, {"month_name": "Oct", "year": 2011, "sales": 305660.45, "profit": 49054.12}, {"month_name": "Nov", "year": 2011, "sales": 367769.5, "profit": 39560.02}, {"month_name": "Dec", "year": 2011, "sales": 328877.31, "profit": 37494.12}, {"month_name": "Jan", "year": 2012, "sales": 340626.51, "profit": 43312.52}, {"month_name": "Feb", "year": 2012, "sales": 276132.5, "profit": 25158.43}, {"month_name": "Mar", "year": 2012, "sales": 348208.33, "profit": 37636.13}, {"month_name": "Apr", "year": 2012, "sales": 268024.97, "profit": 31361.04}, {"month_name": "May", "year": 2012, "sales": 384588.06, "profit": 29371.44}, {"month_name": "Jun", "year": 2012, "sales": 276580.94, "profit": 30454.28}, {"month_name": "Jul", "year": 2012, "sales": 242809.7, "profit": 26393.59}, {"month_name": "Aug", "year": 2012, "sales": 302745.12, "profit": 13660.95}, {"month_name": "Sep", "year": 2012, "sales": 318271.57, "profit": 34579.9}, {"month_name": "Oct", "year": 2012, "sales": 351246.73, "profit": 21137.51}, {"month_name": "Nov", "year": 2012, "sales": 256020.1, "profit": 27543.05}, {"month_name": "Dec", "year": 2012, "sales": 354709.34, "profit": 21292.94}], "region_profit": [{"province": "Nunavut", "region_profit": 2841.11}, {"province": "Newfoundland", "region_profit": 6885.14}, {"province": "Prince Edward Island", "region_profit": 31361.71}, {"province": "Yukon", "region_profit": 73849.21}, {"province": "Nova Scotia", "region_profit": 85361.87}, {"province": "Northwest Territories", "region_profit": 100653.08}, {"province": "New Brunswick", "region_profit": 115351.94}], "top_customers": [{"customer_name": "Emily Phan", "total_profit": 34005.44}, {"customer_name": "Deborah Brumfield", "total_profit": 23299.21}, {"customer_name": "Grant Carroll", "total_profit": 21505.91}, {"customer_name": "Liz MacKendrick", "total_profit": 20397.24}, {"customer_name": "Karen Carlisle", "total_profit": 19198.57}, {"customer_name": "John Stevenson", "total_profit": 18849.93}, {"customer_name": "Clytie Kelty", "total_profit": 18792.81}, {"customer_name": "Raymond Book", "total_profit": 18760.59}, {"customer_name": "Logan Haushalter", "total_profit": 18348.53}, {"customer_name": "Rick Wilson", "total_profit": 14940.55}], "shipmode_days": [{"ship_mode": "Delivery Truck", "avg_shipping_days": 2.02}, {"ship_mode": "Express Air", "avg_shipping_days": 2.04}, {"ship_mode": "Regular Air", "avg_shipping_days": 2.04}], "priority_shipping": [{"order_priority": "High", "avg_shipping_days": 1.41}, {"order_priority": "Medium", "avg_shipping_days": 1.47}, {"order_priority": "Not Specified", "avg_shipping_days": 1.47}, {"order_priority": "Critical", "avg_shipping_days": 1.52}, {"order_priority": "Low", "avg_shipping_days": 4.24}]};
+
+const fmt = n => '₹' + (Math.abs(n) >= 1e6 ? (n/1e6).toFixed(2)+'M' : (n/1e3).toFixed(0)+'K');
+
+document.getElementById('kpi-sales').textContent = fmt(14915600.82);
+document.getElementById('kpi-profit').textContent = fmt(1521767.98);
+
+Chart.defaults.color = '#8a96b3';
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.font.size = 11;
+
+const gridColor = '#1c2740';
+
+// Trend chart
+new Chart(document.getElementById('trendChart'), {
+  type: 'line',
+  data: {
+    labels: data.monthly_trend.map(d => d.month_name + " '" + String(d.year).slice(2)),
+    datasets: [
+      {
+        label: 'Sales', data: data.monthly_trend.map(d => d.sales),
+        borderColor: '#2dd4bf', backgroundColor: 'rgba(45,212,191,0.08)',
+        fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2, yAxisID: 'y'
+      },
+      {
+        label: 'Profit', data: data.monthly_trend.map(d => d.profit),
+        borderColor: '#f5a524', backgroundColor: 'rgba(245,165,36,0.08)',
+        fill: false, tension: 0.3, pointRadius: 0, borderWidth: 2, yAxisID: 'y1'
+      }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: { legend: { position: 'top', align: 'end', labels: { boxWidth: 10, usePointStyle: true } } },
+    scales: {
+      x: { grid: { display: false }, ticks: { maxTicksLimit: 8 } },
+      y: { position: 'left', grid: { color: gridColor }, ticks: { callback: v => fmt(v) } },
+      y1: { position: 'right', grid: { display: false }, ticks: { callback: v => fmt(v) } }
+    }
+  }
+});
+
+// Sub-category profit (diverging horizontal bar)
+new Chart(document.getElementById('subcatChart'), {
+  type: 'bar',
+  data: {
+    labels: data.subcategory_profit.map(d => d.product_sub_category),
+    datasets: [{
+      data: data.subcategory_profit.map(d => d.total_profit),
+      backgroundColor: data.subcategory_profit.map(d => d.total_profit < 0 ? '#fb6b6b' : '#34d399'),
+      borderRadius: 3
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { callback: v => fmt(v) } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// Priority shipping chart
+new Chart(document.getElementById('priorityChart'), {
+  type: 'bar',
+  data: {
+    labels: data.priority_shipping.map(d => d.order_priority),
+    datasets: [{
+      data: data.priority_shipping.map(d => d.avg_shipping_days),
+      backgroundColor: data.priority_shipping.map(d => d.order_priority === 'Low' ? '#fb6b6b' : '#2dd4bf'),
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { display: false } },
+      y: { grid: { color: gridColor }, title: { display: true, text: 'Avg Days', color: '#8a96b3' } }
+    }
+  }
+});
+
+// Region chart
+new Chart(document.getElementById('regionChart'), {
+  type: 'bar',
+  data: {
+    labels: data.region_profit.map(d => d.province),
+    datasets: [{
+      data: data.region_profit.map(d => d.region_profit),
+      backgroundColor: '#f5a524',
+      borderRadius: 4
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: gridColor }, ticks: { callback: v => fmt(v) } },
+      y: { grid: { display: false }, ticks: { font: { size: 10 } } }
+    }
+  }
+});
+
+// Customer table
+const tbody = document.getElementById('customerTable');
+data.top_customers.forEach((c, i) => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `<td class="name">${i+1}. ${c.customer_name}</td><td class="num">${fmt(c.total_profit)}</td>`;
+  tbody.appendChild(tr);
+});
+</script>
+
+</body>
+</html>
