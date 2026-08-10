@@ -1,0 +1,16 @@
+# Generated DB (rebuilt by running the pipeline)
+data/superstore.db
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Power BI (large binary, build it locally from the guide instead)
+*.pbix

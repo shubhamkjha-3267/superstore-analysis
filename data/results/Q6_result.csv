@@ -1,0 +1,16 @@
+ship_mode,order_priority,num_orders,avg_shipping_days,avg_shipping_cost
+Delivery Truck,Critical,228,1.5,47.3
+Delivery Truck,High,248,1.5,45.19
+Delivery Truck,Not Specified,215,1.5,43.67
+Delivery Truck,Medium,205,1.6,46.15
+Delivery Truck,Low,250,4.0,44.53
+Express Air,High,212,1.4,6.86
+Express Air,Critical,200,1.5,8.71
+Express Air,Medium,201,1.5,8.13
+Express Air,Not Specified,180,1.5,8.17
+Express Air,Low,190,4.3,8.17
+Regular Air,High,1308,1.4,7.65
+Regular Air,Critical,1180,1.5,7.28
+Regular Air,Medium,1225,1.5,7.69
+Regular Air,Not Specified,1277,1.5,7.62
+Regular Air,Low,1280,4.3,8.02

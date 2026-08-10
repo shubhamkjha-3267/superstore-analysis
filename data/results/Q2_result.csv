@@ -1,0 +1,4 @@
+discount_bucket,num_orders,avg_profit,total_profit,weighted_profit_margin_pct
+0% (no discount),756,248.93,188188.77,12.6
+1-10%,7638,174.66,1334063.2,9.9
+11-30%,5,-96.8,-483.99,-21.3

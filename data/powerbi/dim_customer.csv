@@ -1,0 +1,990 @@
+customer_id,customer_name,customer_segment
+1,Muhammed MacIntyre,Small Business
+2,Barry French,Consumer
+3,Clay Rozendal,Corporate
+4,Carlos Soltero,Consumer
+5,Carl Jackson,Corporate
+6,Monica Federle,Corporate
+7,Dorothy Badders,Home Office
+8,Neola Schneider,Home Office
+9,Carlos Daly,Home Office
+10,Claudia Miner,Small Business
+11,Allen Rosenblatt,Small Business
+12,Sylvia Foulston,Home Office
+13,Jim Radford,Corporate
+14,Carl Ludwig,Corporate
+15,Don Miller,Home Office
+16,Annie Cyprus,Home Office
+17,Grant Carroll,Small Business
+18,Alan Barnes,Corporate
+19,Jack Garza,Corporate
+20,Julia West,Corporate
+21,Eugene Barchas,Corporate
+22,Edward Hooks,Consumer
+23,Brad Eason,Small Business
+24,Nicole Hansen,Small Business
+25,Dorothy Wardle,Corporate
+26,Aaron Bergman,Corporate
+27,Don Jones,Corporate
+28,Beth Thompson,Corporate
+29,Frank Price,Corporate
+30,Michelle Lonsdale,Home Office
+31,Ann Chong,Corporate
+32,Joy Bell,Home Office
+33,Skye Norling,Home Office
+34,Barry Weirich,Corporate
+35,Grant Carroll,Corporate
+36,Adrian Hane,Corporate
+37,Andrew Gjertsen,Consumer
+38,Ralph Knight,Consumer
+39,Beth Paige,Consumer
+40,Sylvia Foulston,Corporate
+41,Bryan Davis,Corporate
+42,Delfina Latchford,Small Business
+43,Doug Bickford,Corporate
+44,Jamie Kunitz,Corporate
+45,Anthony Johnson,Small Business
+46,Carl Jackson,Home Office
+47,Brendan Dodson,Corporate
+48,Hunter Glantz,Corporate
+49,Eugene Barchas,Home Office
+50,Carlos Soltero,Small Business
+51,Doug Bickford,Small Business
+52,Thomas Seio,Home Office
+53,Nicole Hansen,Corporate
+54,Becky Castell,Consumer
+55,Cari Schnelling,Home Office
+56,Chad Cunningham,Small Business
+57,Bryan Mills,Small Business
+58,Rick Reed,Consumer
+59,Heather Kirkland,Home Office
+60,Fred Wasserman,Home Office
+61,Jack Lebron,Corporate
+62,Julia West,Home Office
+63,Julia West,Small Business
+64,Mike Pelletier,Corporate
+65,Charles McCrossin,Corporate
+66,Michelle Lonsdale,Corporate
+67,Charlotte Melton,Home Office
+68,Henry Goldwyn,Small Business
+69,Roy Skaria,Corporate
+70,Jeremy Lonsdale,Corporate
+71,Carlos Daly,Corporate
+72,Cindy Schnelling,Corporate
+73,Susan Vittorini,Corporate
+74,Toby Braunhardt,Corporate
+75,Julia West,Consumer
+76,Susan Vittorini,Home Office
+77,Mike Pelletier,Small Business
+78,Cari Schnelling,Small Business
+79,Ralph Arnett,Consumer
+80,Bryan Mills,Corporate
+81,Harold Engle,Consumer
+82,Roy French,Consumer
+83,Helen Abelman,Home Office
+84,Guy Armstrong,Corporate
+85,Jennifer Braxton,Small Business
+86,Giulietta Baptist,Home Office
+87,Erica Bern,Corporate
+88,Christopher Schild,Corporate
+89,Joy Smith,Corporate
+90,Evan Minnotte,Corporate
+91,Jenna Caffey,Consumer
+92,Harold Engle,Home Office
+93,Hilary Holden,Corporate
+94,Greg Guthrie,Corporate
+95,Joy Smith,Consumer
+96,Dan Reichenbach,Corporate
+97,Paul Gonzalez,Corporate
+98,Filia McAdams,Small Business
+99,Greg Guthrie,Small Business
+100,Chuck Magee,Corporate
+101,Frank Atkinson,Corporate
+102,Philip Brown,Home Office
+103,Erica Bern,Small Business
+104,Jim Sink,Corporate
+105,Philip Brown,Corporate
+106,Logan Haushalter,Corporate
+107,Noah Childs,Home Office
+108,Brian Moss,Corporate
+109,Julie Creighton,Corporate
+110,Sanjit Chand,Home Office
+111,Matt Collins,Consumer
+112,Justin Knight,Corporate
+113,Rob Haberlin,Corporate
+114,Rob Haberlin,Consumer
+115,Christina Vanderzanden,Small Business
+116,Lena Cacioppo,Home Office
+117,Kimberly Carter,Home Office
+118,Gene Hale,Consumer
+119,Sally Knutson,Consumer
+120,Marina Lichtenstein,Corporate
+121,Michelle Arnett,Home Office
+122,Seth Vernon,Home Office
+123,Luke Weiss,Corporate
+124,Kimberly Carter,Small Business
+125,Sally Knutson,Corporate
+126,Christina DeMoss,Home Office
+127,Sonia Sunley,Small Business
+128,Anthony O'Donnell,Consumer
+129,Emily Grady,Home Office
+130,Alex Avila,Home Office
+131,Anna Andreadi,Small Business
+132,Barbara Fisher,Small Business
+133,Kelly Williams,Corporate
+134,Sonia Sunley,Corporate
+135,Jocasta Rupert,Consumer
+136,Rick Duston,Corporate
+137,Angele Hood,Consumer
+138,Dennis Bolton,Consumer
+139,Stewart Carmichael,Corporate
+140,Alex Avila,Corporate
+141,Sarah Foster,Corporate
+142,Jim Karlsson,Small Business
+143,Lisa DeCherney,Corporate
+144,Dennis Bolton,Small Business
+145,Peter Buhler,Consumer
+146,Anthony O'Donnell,Corporate
+147,Daniel Lacy,Small Business
+148,Giulietta Weimer,Corporate
+149,Mike Vittorini,Small Business
+150,Lela Donovan,Corporate
+151,Shahid Shariari,Corporate
+152,Trudy Schmidt,Small Business
+153,Christopher Martinez,Small Business
+154,Marc Harrigan,Home Office
+155,Liz Price,Consumer
+156,Ralph Kennedy,Corporate
+157,Rob Dowd,Corporate
+158,Khloe Miller,Home Office
+159,Shahid Hopkins,Small Business
+160,Kristina Nunn,Consumer
+161,Ricardo Emerson,Corporate
+162,Patrick O'Brill,Home Office
+163,Thomas Brumley,Consumer
+164,Vicky Freymann,Home Office
+165,Khloe Miller,Corporate
+166,Tony Chapman,Consumer
+167,Liz Price,Corporate
+168,Sarah Bern,Corporate
+169,Mark Cousins,Home Office
+170,Mark Cousins,Corporate
+171,Daniel Byrd,Home Office
+172,John Murray,Small Business
+173,Lena Hernandez,Home Office
+174,Greg Maxwell,Home Office
+175,Giulietta Weimer,Home Office
+176,Justin Hirsh,Consumer
+177,Shahid Shariari,Consumer
+178,Sally Knutson,Small Business
+179,Sally Knutson,Home Office
+180,Heather Jas,Corporate
+181,Philisse Overcash,Small Business
+182,Neil Knudson,Home Office
+183,Cathy Armstrong,Consumer
+184,Neil Knudson,Corporate
+185,Chuck Clark,Corporate
+186,Khloe Miller,Consumer
+187,Bill Eplett,Corporate
+188,John Grady,Corporate
+189,Tanja Norvell,Consumer
+190,Paul MacIntyre,Corporate
+191,Matt Abelman,Consumer
+192,Sarah Jordon,Consumer
+193,Sally Matthias,Corporate
+194,Sally Matthias,Home Office
+195,Theone Pippenger,Corporate
+196,Art Ferguson,Corporate
+197,Jack O'Briant,Home Office
+198,Nathan Cano,Consumer
+199,Michael Granlund,Corporate
+200,Steve Carroll,Consumer
+201,Scott Williamson,Small Business
+202,Sean Wendt,Corporate
+203,John Castell,Consumer
+204,Jack O'Briant,Small Business
+205,David Philippe,Consumer
+206,Chad Sievert,Corporate
+207,Matt Abelman,Home Office
+208,Shaun Weien,Home Office
+209,Maya Herman,Corporate
+210,Michael Granlund,Home Office
+211,Jack O'Briant,Consumer
+212,Ivan Liston,Consumer
+213,Brad Norvell,Corporate
+214,Ken Heidel,Corporate
+215,John Castell,Small Business
+216,Mike Kennedy,Small Business
+217,Charles Sheldon,Corporate
+218,Mike Kennedy,Corporate
+219,Matt Abelman,Small Business
+220,Brian Derr,Small Business
+221,Roland Black,Small Business
+222,Dana Kaydos,Corporate
+223,Darren Koutras,Consumer
+224,Neil Ducich,Home Office
+225,Parhena Norris,Home Office
+226,Bart Watters,Corporate
+227,Mary O'Rourke,Home Office
+228,Hunter Lopez,Consumer
+229,Nathan Mautz,Corporate
+230,Nathan Mautz,Home Office
+231,Aaron Smayling,Small Business
+232,Joel Jenkins,Corporate
+233,Meg O'Connel,Corporate
+234,Hallie Redmond,Home Office
+235,Liz Thompson,Corporate
+236,Robert Waldorf,Home Office
+237,Helen Andreada,Corporate
+238,Julia Dunbar,Consumer
+239,Christine Sundaresam,Small Business
+240,Bruce Stewart,Corporate
+241,Guy Thornton,Corporate
+242,Mary Zewe,Corporate
+243,Ken Lonsdale,Consumer
+244,Maria Bertelson,Home Office
+245,Brian Thompson,Home Office
+246,Hallie Redmond,Small Business
+247,Jason Gross,Small Business
+248,Katrina Bavinger,Consumer
+249,Maria Bertelson,Corporate
+250,Ivan Gibson,Corporate
+251,Joseph Airdo,Corporate
+252,Joseph Airdo,Consumer
+253,Meg O'Connel,Small Business
+254,Lycoris Saunders,Home Office
+255,Lycoris Saunders,Corporate
+256,Dorothy Dickinson,Corporate
+257,Janet Molinari,Corporate
+258,Julie Prescott,Home Office
+259,Annie Thurman,Home Office
+260,Rob Beeghly,Consumer
+261,Annie Thurman,Consumer
+262,Doug O'Connell,Small Business
+263,Craig Carroll,Corporate
+264,Liz MacKendrick,Corporate
+265,Christine Kargatis,Small Business
+266,Bobby Odegard,Corporate
+267,Craig Carroll,Small Business
+268,Russell Applegate,Home Office
+269,Bill Donatelli,Small Business
+270,Bill Donatelli,Corporate
+271,Duane Benoit,Home Office
+272,Bobby Odegard,Consumer
+273,Russell Applegate,Small Business
+274,Harold Pawlan,Small Business
+275,Adam Bellavance,Small Business
+276,Cari Sayre,Home Office
+277,Sean O'Donnell,Corporate
+278,Sandra Glassco,Home Office
+279,Shirley Schmidt,Corporate
+280,Rick Wilson,Corporate
+281,Rick Wilson,Consumer
+282,Pauline Chand,Corporate
+283,Jennifer Halladay,Home Office
+284,Ritsa Hightower,Corporate
+285,Joni Blumstein,Home Office
+286,Pete Armstrong,Consumer
+287,Pauline Chand,Small Business
+288,Anna Gayman,Corporate
+289,Joni Blumstein,Consumer
+290,Nat Gilpin,Consumer
+291,Rose O'Brian,Home Office
+292,Daniel Raglin,Corporate
+293,Corinna Mitchell,Corporate
+294,Eva Jacobs,Home Office
+295,Jas O'Carroll,Corporate
+296,Jas O'Carroll,Home Office
+297,Paul Prost,Corporate
+298,Michael Nguyen,Small Business
+299,Lisa DeCherney,Consumer
+300,Tamara Dahlen,Corporate
+301,Erin Creighton,Corporate
+302,Henry MacAllister,Small Business
+303,Candace McMahon,Corporate
+304,Tamara Chand,Consumer
+305,Duane Huffman,Small Business
+306,Edward Nazzal,Home Office
+307,Kelly Lampkin,Corporate
+308,Anthony Witt,Corporate
+309,Ted Trevino,Corporate
+310,Ed Ludwig,Consumer
+311,Jeremy Ellison,Small Business
+312,Alan Hwang,Corporate
+313,Kelly Lampkin,Home Office
+314,Eileen Kiefer,Consumer
+315,James Lanier,Corporate
+316,Edward Becker,Corporate
+317,Gary Zandusky,Home Office
+318,Ann Blume,Corporate
+319,Erin Smith,Home Office
+320,Allen Golden,Consumer
+321,Frank Carlisle,Small Business
+322,Gary Hansen,Consumer
+323,Nancy Lomonaco,Home Office
+324,Anna Haberlin,Corporate
+325,Erin Ashbrook,Consumer
+326,Darren Budd,Consumer
+327,Bill Stewart,Corporate
+328,Christine Phan,Small Business
+329,Alan Hwang,Small Business
+330,Darren Budd,Corporate
+331,Eugene Hildebrand,Home Office
+332,Edward Becker,Home Office
+333,Melanie Page,Corporate
+334,Jesus Ocampo,Small Business
+335,Darren Powers,Corporate
+336,Patrick Bzostek,Consumer
+337,Darren Budd,Home Office
+338,Grace Kelly,Consumer
+339,Dan Lawera,Corporate
+340,George Ashbrook,Small Business
+341,Dave Hallsten,Home Office
+342,Arthur Wiediger,Corporate
+343,Duane Huffman,Consumer
+344,Jim Mitchum,Consumer
+345,Andy Yotov,Corporate
+346,Frank Hawley,Home Office
+347,Theresa Coyne,Home Office
+348,David Smith,Small Business
+349,Naresj Patel,Small Business
+350,Ruben Ausman,Corporate
+351,Larry Hughes,Home Office
+352,Magdelene Morse,Home Office
+353,George Ashbrook,Consumer
+354,Jonathan Howell,Consumer
+355,Linda Cazamias,Corporate
+356,Nat Carroll,Home Office
+357,Gary Mitchum,Consumer
+358,Matt Hagelstein,Home Office
+359,Andy Reiter,Corporate
+360,Mike Caudle,Corporate
+361,Cynthia Arntzen,Home Office
+362,Edward Nazzal,Small Business
+363,Cynthia Arntzen,Small Business
+364,Brian Stugart,Consumer
+365,George Bell,Corporate
+366,Naresj Patel,Corporate
+367,Joni Sundaresam,Home Office
+368,Dave Hallsten,Corporate
+369,Michelle Huthwaite,Home Office
+370,Amy Cox,Corporate
+371,Cari MacIntyre,Corporate
+372,Eudokia Martin,Home Office
+373,Fred Hopkins,Home Office
+374,Amy Cox,Small Business
+375,Aimee Bixby,Home Office
+376,Anemone Ratner,Small Business
+377,Chris Selesnick,Home Office
+378,Noel Staavos,Home Office
+379,Dean Braden,Corporate
+380,Lena Creighton,Corporate
+381,Matt Collister,Home Office
+382,Lena Creighton,Home Office
+383,Erica Smith,Small Business
+384,Janet Martin,Corporate
+385,Andrew Roberts,Small Business
+386,Michael Dominguez,Home Office
+387,Thomas Boland,Corporate
+388,Olvera Toch,Home Office
+389,Lena Radford,Small Business
+390,Sean Christensen,Home Office
+391,Todd Boyes,Consumer
+392,Todd Boyes,Small Business
+393,Sean Miller,Small Business
+394,Phillip Breyer,Corporate
+395,Michelle Ellison,Small Business
+396,Michelle Ellison,Consumer
+397,Scot Coram,Corporate
+398,Natalie Fritzler,Home Office
+399,Nathan Gelder,Home Office
+400,Patricia Hirasaki,Home Office
+401,Maria Zettner,Corporate
+402,Matthew Clasen,Consumer
+403,Patrick O'Donnell,Home Office
+404,Harry Marie,Consumer
+405,Victoria Wilson,Home Office
+406,Shahid Collister,Home Office
+407,Katrina Bavinger,Home Office
+408,Michelle Ellison,Home Office
+409,Thea Hendricks,Home Office
+410,Corey Catlett,Home Office
+411,Ed Jacobs,Small Business
+412,Keith Herrera,Small Business
+413,Carlos Meador,Corporate
+414,Raymond Fair,Small Business
+415,Karl Brown,Home Office
+416,Natalie Webber,Consumer
+417,Eric Barreto,Consumer
+418,Barry Franz,Corporate
+419,Craig Yedwab,Corporate
+420,Eric Barreto,Small Business
+421,Chuck Sachs,Consumer
+422,Muhammed Lee,Consumer
+423,Karl Brown,Corporate
+424,Bobby Trafton,Small Business
+425,David Flashing,Home Office
+426,Troy Staebel,Small Business
+427,Nora Paige,Small Business
+428,Harold Dahlen,Corporate
+429,Jay Fine,Consumer
+430,Dan Campbell,Corporate
+431,George Zrebassa,Home Office
+432,Eleni McCrary,Corporate
+433,Astrea Jones,Corporate
+434,Giulietta Dortch,Consumer
+435,Cathy Hwang,Home Office
+436,Damala Kotsonis,Corporate
+437,Dianna Arnett,Home Office
+438,Fred McMath,Small Business
+439,Christy Brittain,Consumer
+440,Tom Prescott,Small Business
+441,Yana Sorensen,Corporate
+442,Harold Dahlen,Consumer
+443,Brad Thomas,Corporate
+444,Cynthia Voltz,Corporate
+445,Dean Percer,Consumer
+446,Ben Peterman,Corporate
+447,Tracy Poddar,Corporate
+448,Michael Paige,Small Business
+449,Corey Roper,Small Business
+450,Maureen Gastineau,Consumer
+451,Muhammed Yedwab,Consumer
+452,Alex Grayson,Consumer
+453,Chris Cortes,Consumer
+454,Dan Campbell,Small Business
+455,Sara Luxemburg,Small Business
+456,Eric Murdock,Home Office
+457,Paul Knutson,Corporate
+458,Nicole Brennan,Consumer
+459,Jennifer Patt,Home Office
+460,Elpida Rittenbach,Consumer
+461,David Wiener,Consumer
+462,Peter McVee,Small Business
+463,Karen Carlisle,Home Office
+464,Stefania Perrino,Corporate
+465,Paul Lucas,Corporate
+466,George Zrebassa,Small Business
+467,Evan Henry,Corporate
+468,Alyssa Tate,Small Business
+469,Michael Stewart,Small Business
+470,Shirley Jackson,Corporate
+471,Natalie Webber,Corporate
+472,Karen Carlisle,Corporate
+473,Katherine Murray,Home Office
+474,Berenike Kampe,Corporate
+475,Dean Percer,Home Office
+476,Erica Hernandez,Small Business
+477,Tony Molinari,Corporate
+478,Elizabeth Moffitt,Consumer
+479,David Flashing,Consumer
+480,Deanra Eno,Corporate
+481,Bobby Trafton,Corporate
+482,Mark Packer,Small Business
+483,Ann Blume,Small Business
+484,Alan Shonely,Small Business
+485,Katrina Willman,Consumer
+486,Anthony Garverick,Small Business
+487,Aaron Hawkins,Home Office
+488,Dave Poirier,Small Business
+489,Bradley Drucker,Small Business
+490,Mark Haberlin,Small Business
+491,Brad Thomas,Home Office
+492,Brendan Murry,Corporate
+493,Emily Burns,Home Office
+494,Michael Oakman,Small Business
+495,Deborah Brumfield,Small Business
+496,Robert Barroso,Small Business
+497,Darrin Sayre,Consumer
+498,Deborah Brumfield,Corporate
+499,Eleni McCrary,Home Office
+500,Michael Kennedy,Corporate
+501,Marc Crier,Corporate
+502,Bobby Elias,Small Business
+503,Joni Wasserman,Consumer
+504,Karen Ferguson,Home Office
+505,Giulietta Dortch,Corporate
+506,Bradley Talbott,Small Business
+507,Bradley Talbott,Corporate
+508,Brian Stugart,Corporate
+509,Julia Barnett,Corporate
+510,Emily Phan,Consumer
+511,Liz Willingham,Home Office
+512,Denise Leinenbach,Home Office
+513,Bill Tyler,Consumer
+514,Denise Leinenbach,Corporate
+515,Debra Catini,Small Business
+516,Becky Martin,Home Office
+517,Benjamin Venier,Small Business
+518,Nora Paige,Consumer
+519,Bill Shonely,Small Business
+520,Craig Yedwab,Consumer
+521,Pierre Wener,Home Office
+522,Julie Kriz,Corporate
+523,Sylvia Foulston,Consumer
+524,David Kendrick,Home Office
+525,Doug Jacobs,Home Office
+526,Luke Foster,Corporate
+527,Sara Luxemburg,Corporate
+528,Dianna Wilson,Small Business
+529,Michelle Tran,Consumer
+530,Sanjit Jacobs,Consumer
+531,Barry Gonzalez,Consumer
+532,Vivian Mathis,Corporate
+533,Vivian Mathis,Home Office
+534,Carol Adams,Corporate
+535,Vivek Gonzalez,Consumer
+536,Bradley Nguyen,Consumer
+537,Vivian Mathis,Consumer
+538,Michelle Tran,Corporate
+539,Pete Takahito,Corporate
+540,Jason Klamczynski,Small Business
+541,Michelle Tran,Home Office
+542,Greg Tran,Home Office
+543,Gene McClure,Home Office
+544,Helen Wasserman,Home Office
+545,Helen Wasserman,Corporate
+546,Ross DeVincentis,Corporate
+547,Jason Klamczynski,Home Office
+548,Valerie Mitchum,Home Office
+549,Bradley Nguyen,Corporate
+550,Barry Gonzalez,Small Business
+551,Bart Pistole,Consumer
+552,Chad McGuire,Small Business
+553,Scott Cohen,Consumer
+554,Gene McClure,Consumer
+555,Vivek Sundaresam,Home Office
+556,Natalie DeCherney,Consumer
+557,Cynthia Delaney,Corporate
+558,Tom Stivers,Corporate
+559,Gary McGarr,Home Office
+560,Cynthia Delaney,Home Office
+561,Tom Stivers,Small Business
+562,Bart Pistole,Home Office
+563,Grant Thornton,Corporate
+564,Carlos Meador,Consumer
+565,Speros Goranitis,Corporate
+566,Ellis Ballard,Corporate
+567,Maribeth Dona,Home Office
+568,Corey Lock,Home Office
+569,Bart Folk,Corporate
+570,Keith Herrera,Corporate
+571,Nicole Brennan,Home Office
+572,Anne Pryor,Consumer
+573,Dorris Love,Home Office
+574,Caroline Jumper,Corporate
+575,Pamela Stobb,Consumer
+576,Jasper Cacioppo,Home Office
+577,Alan Haines,Consumer
+578,Deirdre Greer,Home Office
+579,John Stevenson,Small Business
+580,Sheri Gordon,Corporate
+581,Ben Wallace,Home Office
+582,Max Engle,Corporate
+583,Fred Chung,Corporate
+584,Dennis Kane,Small Business
+585,Phillip Flathmann,Small Business
+586,Mathew Reese,Small Business
+587,Stuart Van,Consumer
+588,Brenda Bowman,Small Business
+589,Jennifer Ferguson,Corporate
+590,Theresa Swint,Consumer
+591,Alan Haines,Home Office
+592,Katherine Nockton,Home Office
+593,Stewart Visinsky,Corporate
+594,Jeremy Farry,Small Business
+595,Clay Ludtke,Consumer
+596,Laurel Elliston,Corporate
+597,Katherine Nockton,Corporate
+598,Theresa Swint,Small Business
+599,Mitch Webber,Corporate
+600,Carol Triggs,Home Office
+601,Justin MacKendrick,Corporate
+602,Jennifer Ferguson,Home Office
+603,Sarah Brown,Consumer
+604,Anne Pryor,Home Office
+605,Tony Sayre,Small Business
+606,Karen Ferguson,Corporate
+607,Dionis Lloyd,Small Business
+608,Carol Triggs,Corporate
+609,Lindsay Castell,Small Business
+610,Michael Chen,Consumer
+611,Tony Sayre,Home Office
+612,Theresa Swint,Home Office
+613,Dorris Love,Corporate
+614,Laurel Elliston,Home Office
+615,Toby Carlisle,Home Office
+616,Ted Butterfield,Corporate
+617,Nora Price,Home Office
+618,Liz Willingham,Corporate
+619,Lindsay Castell,Corporate
+620,Anne Pryor,Corporate
+621,Nora Price,Small Business
+622,Brenda Bowman,Home Office
+623,Shirley Daniels,Corporate
+624,Arthur Gainer,Corporate
+625,Stuart Calhoun,Consumer
+626,Arthur Prichep,Home Office
+627,Kean Nguyen,Corporate
+628,Jim Kriz,Consumer
+629,Harold Ryan,Home Office
+630,John Lucas,Corporate
+631,Alejandro Grove,Corporate
+632,Sam Zeldin,Small Business
+633,Sally Hughsby,Consumer
+634,Jane Waco,Corporate
+635,Sandra Flanagan,Home Office
+636,Steve Nguyen,Consumer
+637,Herbert Flentye,Small Business
+638,Sandra Flanagan,Corporate
+639,Xylona Price,Corporate
+640,John Lucas,Small Business
+641,Bill Overfelt,Corporate
+642,Robert Marley,Corporate
+643,Mick Hernandez,Home Office
+644,Guy Phonely,Corporate
+645,Jay Kimmel,Small Business
+646,Matt Connell,Corporate
+647,Steve Nguyen,Small Business
+648,Vivek Grady,Home Office
+649,Ben Ferrer,Corporate
+650,Karen Daniels,Consumer
+651,Pamela Coakley,Corporate
+652,Denny Blanton,Home Office
+653,Kean Nguyen,Small Business
+654,Laura Armstrong,Small Business
+655,Vivek Grady,Corporate
+656,Lindsay Shagiari,Home Office
+657,Cathy Prescott,Corporate
+658,Stephanie Ulpright,Consumer
+659,Odella Nelson,Small Business
+660,Sally Hughsby,Home Office
+661,Arthur Prichep,Small Business
+662,Ryan Akin,Consumer
+663,Todd Sumrall,Consumer
+664,Alejandro Grove,Consumer
+665,Laura Armstrong,Corporate
+666,Greg Hansen,Home Office
+667,Darrin Martin,Small Business
+668,Ken Brennan,Consumer
+669,Max Jones,Home Office
+670,Ken Brennan,Home Office
+671,Joe Kamberova,Small Business
+672,Maureen Fritzler,Corporate
+673,Art Foster,Home Office
+674,Erica Hackney,Small Business
+675,Don Weiss,Corporate
+676,Jessica Myrick,Small Business
+677,Bruce Degenhardt,Home Office
+678,Kalyca Meade,Corporate
+679,Troy Blackwell,Home Office
+680,Clytie Kelty,Small Business
+681,Steven Roelle,Small Business
+682,Benjamin Patterson,Corporate
+683,Denny Joy,Corporate
+684,Amy Cox,Home Office
+685,Kristen Hastings,Small Business
+686,Kristen Hastings,Corporate
+687,Alan Schoenberger,Corporate
+688,Alejandro Savely,Corporate
+689,Kean Thornton,Corporate
+690,Grant Donatelli,Consumer
+691,Jason Fortune,Corporate
+692,Dave Brooks,Corporate
+693,Philip Fox,Home Office
+694,Ionia McGrath,Home Office
+695,Lori Olson,Consumer
+696,Quincy Jones,Home Office
+697,Patrick Jones,Home Office
+698,Ionia McGrath,Small Business
+699,Karen Seio,Consumer
+700,Patrick Gardner,Consumer
+701,Quincy Jones,Corporate
+702,Nona Balk,Corporate
+703,Erin Mull,Small Business
+704,John Lee,Corporate
+705,Erin Mull,Corporate
+706,Justin Deggeller,Corporate
+707,Keith Dawkins,Home Office
+708,Joe Elijah,Home Office
+709,Stefanie Holloman,Small Business
+710,Ken Black,Consumer
+711,Lindsay Williams,Corporate
+712,Logan Currie,Small Business
+713,Steve Chapman,Corporate
+714,Scot Wooten,Corporate
+715,Denise Monton,Home Office
+716,Marc Crier,Consumer
+717,Ed Braxton,Home Office
+718,Ed Braxton,Consumer
+719,Valerie Takahito,Consumer
+720,Penelope Sewall,Home Office
+721,Sean Braxton,Small Business
+722,Valerie Dominguez,Corporate
+723,Susan MacKendrick,Corporate
+724,Thais Sissman,Corporate
+725,Linda Southworth,Consumer
+726,Michael Moore,Corporate
+727,Patrick Ryan,Corporate
+728,Thais Sissman,Small Business
+729,Ross Baird,Corporate
+730,Tracy Zic,Consumer
+731,Mick Crebagga,Home Office
+732,Steven Ward,Consumer
+733,Tanja Norvell,Corporate
+734,Ryan Crowe,Small Business
+735,Irene Maddox,Consumer
+736,Nick Radford,Corporate
+737,Maurice Satty,Corporate
+738,Victor Price,Consumer
+739,Maureen Grace,Corporate
+740,Eric Hoffmann,Small Business
+741,Jill Stevenson,Consumer
+742,Evan Bailliet,Corporate
+743,Meg Tillman,Small Business
+744,Russell D'Ascenzo,Consumer
+745,Gary Hwang,Home Office
+746,Emily Ducich,Consumer
+747,Steven Cartwright,Home Office
+748,Sue Ann Reed,Consumer
+749,Sanjit Engle,Home Office
+750,Katherine Ducich,Corporate
+751,Mike Gockenbach,Consumer
+752,Tom Zandusky,Home Office
+753,Henia Zydlo,Home Office
+754,Tracy Collins,Consumer
+755,Toby Knight,Consumer
+756,Thea Hudgings,Consumer
+757,Nora Pelletier,Corporate
+758,Nora Pelletier,Home Office
+759,Mick Crebagga,Corporate
+760,Jamie Frazer,Small Business
+761,Tracy Collins,Corporate
+762,Rachel Payne,Consumer
+763,Craig Molinari,Small Business
+764,Joy Daniels,Corporate
+765,Jill Fjeld,Home Office
+766,Rick Bensley,Consumer
+767,Toby Knight,Corporate
+768,Maribeth Schnelling,Corporate
+769,Arthur Gainer,Consumer
+770,Rachel Payne,Home Office
+771,Roland Murray,Home Office
+772,Peter Fuller,Consumer
+773,Sam Craven,Home Office
+774,Mitch Willingham,Corporate
+775,John Dryer,Corporate
+776,Susan Gilcrest,Home Office
+777,Randy Bradley,Small Business
+778,William Brown,Corporate
+779,Rick Hansen,Corporate
+780,Toby Grace,Home Office
+781,Joseph Holt,Home Office
+782,Rick Hansen,Home Office
+783,Ashley Jarboe,Small Business
+784,Randy Bradley,Corporate
+785,William Brown,Home Office
+786,Ashley Jarboe,Home Office
+787,Pauline Webber,Consumer
+788,Kean Takahito,Home Office
+789,Nick Zandusky,Small Business
+790,Peter Fuller,Corporate
+791,Neoma Murray,Small Business
+792,Sung Chung,Home Office
+793,Darrin Van Huff,Home Office
+794,Max Ludwig,Corporate
+795,Michelle Moray,Corporate
+796,Craig Rider,Small Business
+797,Maribeth Yedwab,Home Office
+798,Eugene Moren,Home Office
+799,Mark Van Huff,Home Office
+800,Mark Hamilton,Home Office
+801,Sung Shariari,Corporate
+802,Richard Eichhorn,Consumer
+803,Neil French,Consumer
+804,Neil French,Corporate
+805,Nicole Fjeld,Small Business
+806,Suzanne McNair,Small Business
+807,Suzanne McNair,Corporate
+808,Susan Pistek,Home Office
+809,Nick Crebassa,Corporate
+810,Aleksandra Gannaway,Home Office
+811,Aleksandra Gannaway,Corporate
+812,Carl Weiss,Consumer
+813,Joel Eaton,Home Office
+814,Justin Ellison,Home Office
+815,Jennifer Jackson,Home Office
+816,Karen Bern,Corporate
+817,Liz Pelletier,Corporate
+818,Jonathan Doherty,Corporate
+819,Frank Gastineau,Small Business
+820,Janet Lee,Consumer
+821,Maxwell Schwartz,Corporate
+822,Liz Carlisle,Corporate
+823,Kelly Collister,Consumer
+824,Dennis Pardue,Corporate
+825,Dennis Pardue,Small Business
+826,John Huston,Consumer
+827,MaryBeth Skach,Home Office
+828,Liz Pelletier,Home Office
+829,Craig Carreira,Corporate
+830,Paul Stevenson,Corporate
+831,Luke Schmidt,Home Office
+832,Kelly Andreada,Home Office
+833,Tracy Hopkins,Small Business
+834,Craig Leslie,Consumer
+835,Michael Grace,Corporate
+836,Saphhira Shifley,Corporate
+837,Saphhira Shifley,Consumer
+838,Laurel Beltran,Consumer
+839,Tracy Blumstein,Home Office
+840,Larry Blacks,Consumer
+841,Richard Bierner,Small Business
+842,Tiffany House,Corporate
+843,Roy Collins,Corporate
+844,Toby Swindell,Small Business
+845,Christina Anderson,Corporate
+846,Robert Dilbeck,Corporate
+847,Randy Ferguson,Home Office
+848,Arianne Irving,Corporate
+849,Randy Ferguson,Corporate
+850,Andy Gerbode,Consumer
+851,Amy Hunt,Home Office
+852,Trudy Brown,Small Business
+853,Amy Hunt,Small Business
+854,Brian Dahlen,Small Business
+855,Beth Fritzler,Small Business
+856,Brosina Hoffman,Consumer
+857,Amy Hunt,Consumer
+858,Phillina Ober,Small Business
+859,Jim Epp,Small Business
+860,James Galang,Consumer
+861,Lynn Smith,Corporate
+862,Christine Abelman,Corporate
+863,Pauline Johnson,Corporate
+864,Georgia Rosenberg,Consumer
+865,Allen Armold,Home Office
+866,Katherine Hughes,Consumer
+867,Brendan Sweed,Consumer
+868,Dario Medina,Small Business
+869,Cindy Chapman,Consumer
+870,Benjamin Farhat,Home Office
+871,Cindy Chapman,Corporate
+872,Dianna Vittorini,Corporate
+873,Cindy Stewart,Corporate
+874,Quincy Jones,Small Business
+875,Rob Williams,Home Office
+876,Anna Chung,Home Office
+877,Ricardo Block,Corporate
+878,Cindy Stewart,Consumer
+879,Trudy Bell,Consumer
+880,Rob Lucas,Small Business
+881,Adam Hart,Corporate
+882,Roland Fjeld,Corporate
+883,Denny Ordway,Small Business
+884,Charles Crestani,Consumer
+885,Bryan Spruell,Home Office
+886,Thomas Thornton,Consumer
+887,Tamara Willingham,Corporate
+888,Giulietta Dortch,Small Business
+889,Anne McFarland,Consumer
+890,Dean Katz,Home Office
+891,Barry Pond,Consumer
+892,Jeremy Pistek,Corporate
+893,Cyra Reiten,Consumer
+894,Julia Barnett,Home Office
+895,Victoria Pisteka,Corporate
+896,Dave Kipp,Corporate
+897,David Bremer,Corporate
+898,Jill Matthias,Consumer
+899,Tim Taslimi,Corporate
+900,Muhammed Lee,Corporate
+901,Juliana Krohn,Corporate
+902,Duane Noonan,Corporate
+903,Paul Van Hugh,Corporate
+904,Dave Kipp,Consumer
+905,Tom Ashbrook,Home Office
+906,Maris LaWare,Home Office
+907,Mick Brown,Consumer
+908,Chris McAfee,Consumer
+909,Pete Kriz,Corporate
+910,Juliana Krohn,Small Business
+911,Rick Huthwaite,Corporate
+912,Tamara Willingham,Home Office
+913,Paul Van Hugh,Consumer
+914,Carol Darley,Small Business
+915,Fred Harton,Home Office
+916,Andrew Allen,Corporate
+917,Art Miller,Corporate
+918,Lauren Leatherbury,Corporate
+919,Greg Matthias,Home Office
+920,Anthony Rawles,Small Business
+921,Lauren Leatherbury,Home Office
+922,Barry Blumstein,Small Business
+923,Carol Darley,Home Office
+924,Greg Matthias,Small Business
+925,Christopher Martinez,Home Office
+926,Roger Barcio,Corporate
+927,Sung Pak,Small Business
+928,Tim Brockman,Consumer
+929,Resi Polking,Small Business
+930,Roger Demir,Consumer
+931,Tamara Manning,Corporate
+932,Shaun Chance,Corporate
+933,Sharelle Roach,Home Office
+934,Ken Dana,Corporate
+935,Ken Dana,Small Business
+936,Laurel Workman,Home Office
+937,Lisa Ryan,Home Office
+938,Chloris Kastensmidt,Consumer
+939,Lisa Hazard,Home Office
+940,Mitch Gastineau,Small Business
+941,Katharine Harms,Consumer
+942,Matthew Grinstein,Small Business
+943,Mitch Gastineau,Corporate
+944,Maria Etezadi,Home Office
+945,Sample Company A,Home Office
+946,Sonia Cooley,Corporate
+947,Sibella Parks,Small Business
+948,Becky Pak,Corporate
+949,Adam Shillingsburg,Corporate
+950,Brooke Gillingham,Small Business
+951,Tom Boeckenhauer,Corporate
+952,Alex Russell,Home Office
+953,Alejandro Ballentine,Small Business
+954,Claire Good,Home Office
+955,Alyssa Crouse,Corporate
+956,Cassandra Brandow,Home Office
+957,Adrian Barton,Small Business
+958,Catherine Glotzbach,Home Office
+959,Frank Olsen,Small Business
+960,Alyssa Crouse,Home Office
+961,Cari Sayre,Corporate
+962,Alice McCarthy,Corporate
+963,Frank Merwin,Consumer
+964,Bruce Money,Corporate
+965,Larry Tron,Home Office
+966,Brian DeCherney,Corporate
+967,Ann Steele,Corporate
+968,Larry Tron,Corporate
+969,Frank Merwin,Corporate
+970,Anthony Jacobs,Home Office
+971,Katrina Edelman,Corporate
+972,Ruben Dartt,Corporate
+973,Roy Phan,Consumer
+974,Clay Cheatham,Small Business
+975,Yoseph Carroll,Consumer
+976,Raymond Book,Consumer
+977,Alan Dominguez,Corporate
+978,Stephanie Phelps,Consumer
+979,Tonja Turnell,Consumer
+980,Roy Phan,Corporate
+981,Christopher Conant,Consumer
+982,Andrew Roberts,Home Office
+983,Cyma Kinney,Small Business
+984,Christopher Conant,Home Office
+985,Shui Tom,Home Office
+986,Victoria Brennan,Small Business
+987,Adrian Shami,Consumer
+988,Shui Tom,Consumer
+989,Harry Greene,Corporate
